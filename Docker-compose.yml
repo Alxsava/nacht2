@@ -31,12 +31,11 @@ services:
      - "80:80"
     # No custom Nginx configuration needed, use the default settings
     depends_on:
-      #- frontend
       - server
 
-  mongo:
-   image: mongo:latest
-   restart: always
+  #mongo:
+   #image: mongo:latest
+   #restart: always
     #networks:
      # - app_network
 
